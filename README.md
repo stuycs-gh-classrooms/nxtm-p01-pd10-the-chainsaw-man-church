@@ -50,16 +50,20 @@ Enemies:
 - Explode beam
 - Buffer
 - Teleporter
-- 
+- drunker
+- soilder
+- no legs
 
 ### Array Usage
 How will you be using arrays in this project?
 
 1D Array:
-- YOUR ANSER HERE
+- n/a
 
 2D Array:
-- YOUR ANSWER HERE
+- my pos
+- enemy pos
+- bullet pos
 
 
 ### Controls
@@ -80,13 +84,32 @@ Mouse Control:
 ### Classes
 What classes will you be creating for this project? Include the instance variables and methods that you believe you will need. You will be required to create at least 2 different classes. If you are going to use classes similar to those we've made for previous assignments, you will have to add new features to them.
 
-CLASS NAME0
+CLASS YOU
 - Instance variables:
-  - LIST INSTANCE VARS HERE
+  - xcor
+  - ycor
+  - mouse point
+  - hitbox
+  - hp
 - METHODS
-  - LIST METHODS HERE
+  - display
+  - movement
+  - click
+  - hp
+  - hitbox
+  - restart
+  - parry
 
-CLASS NAME1
+CLASS ENEMIES
+- Instance variables:
+  - xcor
+  - ycor
+  - shoot
+  - hp
+  - hitbox
+- METHODS
+  - display
+CLASS BULLETS
 - Instance variables:
   - LIST INSTANCE VARS HERE
 - METHODS
