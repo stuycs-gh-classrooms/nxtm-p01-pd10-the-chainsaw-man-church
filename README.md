@@ -52,8 +52,6 @@ Enemies:
 - Teleporter
 - 
 
-YOUR ANSWERS HERE
-
 ### Array Usage
 How will you be using arrays in this project?
 
@@ -68,11 +66,15 @@ How will you be using arrays in this project?
 How will your program be controlled? List all keyboard commands and mouse interactions.
 
 Keyboard Commands:
-- LIST OF COMMANDS HERE
+- WASD for movement
+- f to parry
+- r to reload
+- t to restart
+- space to blow up
 
 Mouse Control:
-- Mouse movement:
-- Mouse pressed:
+- Mouse movement: Angle
+- Mouse pressed: Shoot
 
 
 ### Classes
