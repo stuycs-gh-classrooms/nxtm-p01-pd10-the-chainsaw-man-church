@@ -36,7 +36,9 @@ What are the core features that your program should have? These should be things
 - normal = does 2 dmg and destroyed when impacted
 - rounds
 - enemy hp scale double every 5 rounds
-- 
+- every 1-5 sec, enemies have a chance of shooting at random direction  
+- parry
+- 5 directions: north, northwest, west, northeast, east
 
 ### Extra Features
 
