@@ -27,32 +27,30 @@ The first phase will be to work on this document.
 ### Necessary Features
 What are the core features that your program should have? These should be things that __must__ be implemented in order to make the program useable/playable, not extra features that could be added to make the program more interesting/fun.
 
-YOUR ANSWERS HERE
+- wasd
+- shoot
+- timer
+- score
+- restart
+- bullets
+- normal = does 2 dmg and destroyed when impacted
+- rounds
+- enemy hp scale double every 5 rounds
+- 
 
 ### Extra Features
-Attacks:
-- Normal
-- Charge
-- Bounce
-- Parry
-- Health
-- Glory Kill
-- 
+
+bullet types:
+- charge = does 1+ dmg for each charge (starts at 1) and pierces
+  - each enemy pierced -1 dmg
+- bounce = does +2 dmg for each bounce on wall and +1 piece
+  - each enemy pierced -2 dmg
 Enemies:
-- Kamekaze
-- normal
-- Explode
-- Beam
-- Beam barrage
-- delyed explosion
-- bouncy
-- tank
-- Explode beam
-- Buffer
-- Teleporter
-- drunker
-- soilder
-- no legs
+- patterns: square, rect, tri, v
+- enemy types
+
+General:
+- explosions
 
 ### Array Usage
 How will you be using arrays in this project?
@@ -74,11 +72,11 @@ Keyboard Commands:
 - f to parry
 - r to reload
 - t to restart
-- space to blow up
+- space = shoot
 
 Mouse Control:
-- Mouse movement: Angle
-- Mouse pressed: Shoot
+- right mouse = change angle
+- left mouse = change fire mode
 
 
 ### Classes
