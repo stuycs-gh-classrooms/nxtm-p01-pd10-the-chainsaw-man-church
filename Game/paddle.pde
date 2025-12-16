@@ -4,11 +4,10 @@ class Paddle{
  
   
   Paddle(){
-    Paddlewidth = Paddlesize;
   }
   
-  void display(){
+  void display(int Paddlesize){
     fill(255,255,255);
-    rect(mouseX, 700, 250, 25);
+    rect(mouseX-Paddlesize/2, 700, Paddlesize, 10);
   }
 }
