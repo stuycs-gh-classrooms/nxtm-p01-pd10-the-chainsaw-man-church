@@ -2,6 +2,9 @@ int Paddlewidth;
 Paddle p0;
 FakeBall f0;
 Ball b0;
+int Lives = 3;
+int Rounds = 0;
+int Rows = 5;
 
 void setup() {
   size(1500, 800);
@@ -17,12 +20,13 @@ void setup() {
   b0.y = height/2;
   b0.xspeed = -10;
   b0.yspeed = 10;
+
 }
 
 void draw()
 {
   background(0);
-  
+
   p0.display(Paddlewidth);
   paddlecheck();
   f0.display();
@@ -33,7 +37,24 @@ void draw()
 }
 
 void paddlecheck() {
-  if ((b0.y >= 690) && (b0.y <= 725) && (b0.x >= mouseX-Paddlewidth/2) && (b0.x <= mouseX+Paddlewidth/2)) {
+  int randomc = int(random(0, 2));
+  if ((b0.y == 720) && (b0.x >= mouseX-Paddlewidth/2) && (b0.x <= mouseX+Paddlewidth/2)) {
+    b0.yspeed *= -1;
+    if (randomc == 0) {
+      b0.xspeed*= -1;
+    }
+  }
+  if ((b0.y == 690) && (b0.x >= mouseX-Paddlewidth/2) && (b0.x <= mouseX+Paddlewidth/2)) {
+    b0.yspeed *= -1;
+    if (randomc == 0) {
+      b0.xspeed*= -1;
+    }
+  }
+  if ((b0.y >= 690) && (b0.y <= 720) && (b0.x <= mouseX-Paddlewidth/2) && (b0.x >= mouseX-Paddlewidth/2-10)) {
+    b0.yspeed *= -1;
+  }
+  if ((b0.y >= 690) && (b0.y <= 720) && (b0.x >= mouseX+Paddlewidth/2) && (b0.x <= mouseX+Paddlewidth/2+10)) {
     b0.yspeed *= -1;
   }
 }
+
