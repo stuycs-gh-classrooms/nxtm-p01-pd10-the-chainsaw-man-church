@@ -58,3 +58,9 @@ void paddlecheck() {
   }
 }
 
+void linecheck() {
+  if (b0.y == height-10) {
+    Lives--;
+  }
+}
+
