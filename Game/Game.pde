@@ -14,12 +14,12 @@ void setup() {
   Paddlewidth = 250;
   p0 = new Paddle();
   f0 = new FakeBall();
-  f0.x = int(random(1, width));
+  f0.x = int(random(10, width-10));
   f0.y = height/2;
   f0.xspeed = Speed;
   f0.yspeed = Speed;
   b0 = new Ball();
-  b0.x = int(random(1, width));
+  b0.x = int(random(10, width-10));
   b0.y = height/2;
   b0.xspeed = -Speed;
   b0.yspeed = Speed;
@@ -89,12 +89,12 @@ void newround() {
     }
     Lives++;
     Rounds++;
-    f0.x = int(random(1, width));
+    f0.x = int(random(10, width-10));
     f0.y = height/2;
     f0.xspeed = Speed;
     f0.yspeed = Speed;
     b0 = new Ball();
-    b0.x = int(random(1, width));
+    b0.x = int(random(10, width-10));
     b0.y = height/2;
     b0.xspeed = -Speed;
     b0.yspeed = Speed;
@@ -120,12 +120,12 @@ void keyPressed()
     moving = !moving;
   }
   if (key == 'r') {
-    f0.x = int(random(1, width));
+    f0.x = int(random(10, width-10));
     f0.y = height/2;
     f0.xspeed = Speed;
     f0.yspeed = Speed;
     b0 = new Ball();
-    b0.x = int(random(1, width));
+    b0.x = int(random(10, width-10));
     b0.y = height/2;
     b0.xspeed = -Speed;
     b0.yspeed = Speed;
