@@ -1,7 +1,5 @@
 class Paddle{
   int Paddlesize;
-  int xcor;
- 
   
   Paddle(){
   }

@@ -12,11 +12,10 @@ class FakeBall
         x = int( random(bsize/2, width - bsize/2) );
         y = int( random(bsize/2, height - bsize/2) );
 
-        xspeed = 1;
-        yspeed = 1;
     }
     void display()
     {
+        fill(255,255,255);
         circle(x, y, bsize);
     }
     void move()
